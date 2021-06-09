@@ -1,11 +1,13 @@
 
 
-Data base info:
+Database connection info in php/db.php:
 
 $host = 'localhost';
 $dbuser = 'root';
 $dbpass = '123456';
 $dbname = 'ss_test';
+
+Database dump:
 
 CREATE TABLE tree (
   id int(10) unsigned NOT NULL AUTO_INCREMENT,
