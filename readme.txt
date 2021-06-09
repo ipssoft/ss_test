@@ -1,4 +1,7 @@
 
+
+Data base info:
+
 $host = 'localhost';
 $dbuser = 'root';
 $dbpass = '123456';
