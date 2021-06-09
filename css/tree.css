@@ -1,0 +1,156 @@
+
+.btn1{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-style: oblique;
+  height: 17px;
+  top: 0px;
+
+  margin-left: 5px;
+  border: none;
+  padding:0 12px;
+  border-radius: 3px;
+  color: #222
+}
+.btn1::before{
+  /* margin-left: 10px; */
+  /* margin-right: 0px; */
+}
+
+.item_root{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  /* margin-right: 40px; */
+  /* left: 20px; */
+}
+
+.item_root::before{
+  /* position: absolute; */
+    border-left: 2px solid white;
+    /* height: 100%; */
+    /* width: 0px; */
+    /* top: -10px; */
+    /* margin-right: 10px; */
+
+}
+.item-text{
+  display: inline-block;
+}
+
+.item{
+  cursor: pointer;
+  padding-left: 10px;
+
+  /* user-select: none; */
+  /* width: 50%; */
+
+}
+
+.arrow{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 25px;
+  top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.arrow-dw{
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  font-size: 25px;
+  top: 0px;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.clt, .clt ul, .clt .item {
+   position: relative;
+   font-size: 25px;
+   padding-left: 10px;
+   list-style-type: none;
+
+   /* background:red; */
+}
+
+.clt ul {
+    list-style: none;
+    padding-left: 32px;
+}
+.clt .item::before, .clt .item::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+}
+.clt .item::before {
+    border-top: 1px solid #000;
+    top: 16px;
+    width: 25px;
+    height: 0;
+}
+.clt .item::after {
+    border-left: 2px solid #000;
+    height: 100%;
+    width: 0px;
+    top: -2px;
+}
+.clt ul > .item:last-child::after {
+    height: 18px;
+}
+
+/*
+.clt li::before, .clt li::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+}
+.clt li::before {
+    border-top: 1px solid #000;
+    top: 16px;
+    width: 25px;
+    height: 0;
+}
+.clt li::after {
+    border-left: 2px solid #000;
+    height: 100%;
+    width: 0px;
+    top: -2px;
+}
+.clt ul > li:last-child::after {
+    height: 18px;
+}
+*/
+
+.child-close{
+  display: none;
+}
+.child-open{
+  display: block;
+}
+
+.btnDialog{
+  font-size: 20px;
+}
+.btnCountDw{
+  display: inline-block;
+  color: red;
+  background-color: white;
+  width: 15%;
+  float: left;
+  font-size: 20px;
+}
